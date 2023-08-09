@@ -21,11 +21,18 @@ let audio = document.querySelector('.siema__audio');
 let audioControl = document.querySelector('.siema__audio-control');
 
 document.addEventListener("DOMContentLoaded", () => {
-  audio.muted = !audio.muted;
+  audio.pause();
 });
 
 audioControl.addEventListener('click', function (e) {
-  audio.muted = !audio.muted;
   e.preventDefault();
-  audioControl.classList.toggle('active');
+  if (audioControl.classList.contains('active')) {
+    console.log('DDD');
+    audio.play();
+    audioControl.classList.remove('active');
+  } else {
+    console.log('PPP');
+    audio.pause();
+    audioControl.classList.add('active');
+  }
 }, false);
