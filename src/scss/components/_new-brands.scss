@@ -1,0 +1,101 @@
+.new-brands {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--color-primary-base);
+
+  &__container {
+    display: flex;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 750px;
+    padding-left: 60px;
+    padding-top: 190px;
+    background-image: url("../img/new-brands-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__content {
+    max-width: 400px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: var(--third-family);
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 102.5%; /* 92.25px */
+    text-transform: uppercase;
+    color: var(--color-white-base);
+  }
+
+  &__desc {
+    display: block;
+    margin: 0;
+    margin-bottom: 95px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-white-base);
+  }
+
+  &__link {
+    color: var(--color-gray-20);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+  }
+
+  &__right {
+    position: relative;
+    width: 50%;
+    height: auto;
+
+    &--wrapper {
+      position: absolute;
+      top: 15%;
+      right: 15%;
+      width: 70%;
+      height: 70%;
+      background-image: url(../img/new-brands-right.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 100%;
+    }
+
+    &--link {
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+      width: 70%;
+      color: var(--color-white-base);
+      text-align: center;
+      font-family: var(--font-family);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__right-block {
+    position: absolute;
+      top: 12.5%;
+      right: 12.5%;
+      width: 80%;
+      height: 73%;
+      background-color: var(--color-white-base);
+  }
+}

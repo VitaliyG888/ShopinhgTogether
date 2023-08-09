@@ -1,0 +1,71 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --content-width: 1400px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --font-family: "Avenir";
+  --second-family: "Jost";
+  --third-family: "Cormorant Garamond";
+  --fourth-family: "Cormorant";
+
+  --container-size-xs-lg: 375px;
+  --container-size-sm: 600px;
+  --container-size-md: 900px;
+  --container-size-lg: 1200px;
+  --container-size-xl: 1400px;
+  --font-size-root: 16px;
+  --font-size-1: 3.375rem;
+  --font-size-2: 2.5rem;
+  --font-size-3: 2rem;
+  --font-size-4: 1.5rem;
+  --font-size-5: 1.125rem;
+  --font-size-6: 1rem;
+  --font-size-small: 0.875rem;
+  --spacer-0: 0;
+  --spacer-1: 0.25rem;
+  --spacer-2: 0.5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.25rem;
+  --spacer-5: 1.5rem;
+  --spacer-6: 3rem;
+  --spacer-7: 6rem;
+  --spacer-8: 9rem;
+  --spacer-9: 12rem;
+  --spacer-10: 2rem;
+  --spacer-11: 2.5rem;
+  --spacer-12: 5rem;
+  --spacer-13: 2.75rem;
+  --spacer-14: 4rem;
+
+  // colors
+  --limited-colour: #aacdb8;
+  --available-colour: #15f970;
+  --none-colour: #ff0000;
+  --color-secondary-base: #2f474b;
+  --color-secondary-dark: #1b292c;
+  --color-secondary-light: #43656b;
+  // --color-primary-base: HSL(170, 75%, 20%);
+  // --color-primary-dark: HSL(170, 75%, 10%);
+  // --color-primary-light: HSL(170, 75%, 30%);
+  --color-primary-base: #4a0707e8;
+  --color-primary-dark: #58121df0;
+  --color-primary-light: #974956cf;
+  --color-text-base: #57595b;
+  --color-text-dark: #252627;
+  --color-text-light: #8a8b8f;
+  --color-white-base: #fff;
+  --color-black-base: #000;
+  --color-black-light: #1a1a1a;
+  --color-gray-10: #f2f2f2;
+  --color-gray-20: #ebebeb;
+  --color-gray-30: #b3b3b3;
+  --color-gray-40: #808285;
+  --color-gray-50: #57595b;
+  --color-gray-60: #454545;
+  --color-gray-70: #2b2b2b;
+  --color-gray-80: #1c1c1c;
+  --color-gray-90: #0d0d0d;
+}

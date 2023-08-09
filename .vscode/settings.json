@@ -1,0 +1,25 @@
+{
+  "auto-close-tag.excludedTags": [
+    "area",
+    "base",
+    "br",
+    "col",
+    "command",
+    "embed",
+    "hr",
+    "img",
+    "input",
+    "keygen",
+    "link",
+    "meta",
+    "param",
+    "source",
+    "track",
+    "wbr"
+  ],
+
+  "css.lint.validProperties": ["composes"],
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.validProperties": ["composes"],
+  "scss.lint.unknownAtRules": "ignore"
+}

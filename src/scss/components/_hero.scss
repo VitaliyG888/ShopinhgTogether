@@ -1,0 +1,223 @@
+.hero {
+}
+
+.brands {
+  overflow: hidden;
+  margin: 0 auto;
+  height: 80px;
+  max-width: 1920px;
+
+  &__wrapper {
+    display: flex;
+    height: 80px;
+    width: 400%;
+    animation: slideLeft 40s linear infinite;
+  }
+
+  &__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__wrapper:hover {
+    animation-play-state: paused;
+  }
+
+  &__link {
+    display: flex;
+    margin-right: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    object-fit: contain;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.siema {
+  &__slide {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0, transparent 70%);
+    }
+  }
+
+  &__video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
+  }
+
+  &__controls {
+    position: absolute;
+    text-align: right;
+    bottom: 1rem;
+    right: 1rem;
+
+    &--wrapper {
+      display: flex;
+      align-items: center;
+      padding: var(--spacer-1);
+    }
+  }
+
+  &__pagination {
+    display: inline-flex;
+    position: relative;
+    width: auto;
+    vertical-align: middle;
+    justify-content: center;
+    bottom: auto;
+    left: auto;
+    transform: none;
+  }
+
+  &__btn {
+    display: block;
+    padding: 0;
+    font-size: 0;
+    height: 8px;
+    width: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+    border: 1px solid var(--color-white-base);
+
+    &:not(:last-child) {
+      margin-right: var(--spacer-2);
+    }
+  }
+
+  &__btn.active {
+    background-color: var(--color-white-base);
+    transition: all 0.8s ease 0.3s;
+  }
+
+  &__audio-control {
+    position: relative;
+    margin-left: 0.75rem;
+  }
+
+  &__audio-control.active {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -3px;
+      top: 43%;
+      width: 105%;
+      height: 2px;
+      background-color: var(--color-white-base);
+      transform: rotate(45deg);
+    }
+  }
+
+  &__audio-icon {
+    width: 23px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__btn-play {
+    height: 12px;
+    padding: 0;
+    margin: 0 0.75rem;
+    vertical-align: middle;
+    cursor: pointer;
+    border-left: 12px solid var(--color-white-base);
+    border-bottom: 6px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 6px solid transparent;
+    background: transparent;
+    transition: border-color 0.8s ease 0.3s;
+  }
+
+  &__btn-play.is-plaing {
+    border-style: double;
+    border-width: 0 0 0 12px;
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__is-showing {
+    position: relative;
+    display: block;
+    height: 17px;
+    width: 17px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__left-chevron {
+    border-left: solid 1px var(--color-white-base);
+    border-bottom: solid 1px var(--color-white-base);
+    transform: rotate(45deg);
+  }
+
+  &__right-chevron {
+    border-right: solid 1px var(--color-white-base);
+    border-bottom: solid 1px var(--color-white-base);
+    transform: rotate(-45deg);
+  }
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    max-width: var(--container-size-md);
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+    color: var(--color-white-base);
+  }
+
+  &__title {
+    font-size: var(--font-size-2);
+    letter-spacing: 3px;
+    margin-bottom: var(--spacer-3);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    margin-bottom: var(--spacer-2);
+    font-size: var(--font-size-6);
+    text-transform: uppercase;
+  }
+
+  &__line {
+    max-width: 56%;
+    margin-bottom: var(--spacer-4);
+    border-top-color: #fff;
+  }
+}
