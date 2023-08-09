@@ -4,12 +4,11 @@
 .brands {
   overflow: hidden;
   margin: 0 auto;
-  height: 80px;
   max-width: 1920px;
 
   &__wrapper {
     display: flex;
-    height: 80px;
+    height: 73px;
     width: 400%;
     animation: slideLeft 40s linear infinite;
   }
@@ -47,7 +46,7 @@
 .siema {
   &__slide {
     position: relative;
-    height: 85vh;
+    height: 87vh;
     width: 100%;
 
     img {
